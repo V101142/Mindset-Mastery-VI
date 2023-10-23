@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
 /* Reset styles */
 * {
     margin: 0;
@@ -30,7 +31,7 @@ header {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero.jpeg) no-repeat center center;
+    background: url('../images/hero.jpeg') no-repeat center center;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -38,10 +39,10 @@ header {
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
     }
 }
@@ -134,7 +135,7 @@ body.signup-page #overlay {
 }
 
 #signup {
-    background-image: url("../images/sign-up-image\ 2.jpeg");
+    background-image: url("../images/sign-up-image 2.jpeg");
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
@@ -142,21 +143,18 @@ body.signup-page #overlay {
     margin-top: 50px;
 }
 
-
 #signup-form {
     color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 310px 50px 20px;;
+    padding: 310px 50px 20px;
     margin-top: 30px;
     margin-bottom: auto;
 }
 
-
-#signup-form>h2 {
+#signup-form > h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
-
 
 .text-input {
     background: transparent;
