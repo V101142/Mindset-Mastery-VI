@@ -25,13 +25,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Header styles */
 header {
     background-color: #f0c4a0;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 #hero-image {
-    height: 600px;
+    background: url('/assets/images/hero.jpeg') no-repeat center center;
     width: 100%;
-    background: url('../images/hero.jpeg') no-repeat center center;
+    background-size: cover;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -85,8 +85,8 @@ nav {
     border-bottom: 2px solid #3a3a3a;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 800px) {
+/* Responsive */
+@media screen and (max-width: 768px) {
     #nav-toggle:checked + .nav-toggle-label {
         display: block;
     }
@@ -107,16 +107,7 @@ nav {
         display: block;
         padding: 10px;
     }
-}
 
-/* Main content styles */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
     .container {
         padding: 40px;
     }
@@ -135,7 +126,8 @@ body.signup-page #overlay {
 }
 
 #signup {
-    background-image: url("../images/sign-up-image 2.jpeg");
+    background-image: url("assets/images/sign-up.jpg");
+    width: 100%;
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
