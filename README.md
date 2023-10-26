@@ -2,6 +2,21 @@
 
 Mindset mastery is a site that hopes to help people start practicing and build a routine to develop mindfulness. The site will give an understanding of what mindfulness is, why it is important, and its benefits. Mindset Mastery also includes three easy techniques to help people develop their mindfulness routines and use of www.headspace.com resources as a starting point for people new to mindfulness.  
 
+##UX Design
+
+Objective:
+To provide users with an intuitive, efficient, and enjoyable experience as they navigate through the website, access its resources, and engage with its content.
+
+Target Audience
+Individuals seeking [specific information or service your site provides].
+[Any other target audience groups].
+
+User Journey
+1. Landing on the Website
+Users are greeted with a visually appealing hero image with a transparent white overlay, ensuring that any text on top is readable.
+The site's title, "Midfulness Mastery" immediately communicates the purpose of the site.
+The main navigation menu is clearly visible, allowing users to quickly navigate to the diffent section.
+
 ## Features
 ![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/ac5a1dd4-b51e-45dd-94d7-b7ef65cb5ec7)
 )
