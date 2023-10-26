@@ -13,15 +13,15 @@ body {
     color: #3a3a3a;
     background-color: #e9d6bc;
     line-height: 1.6;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Reduced letter spacing */
+    letter-spacing: 2px;
     color: #252525;
-    font-size: 30px; /* Increased font size */
+    font-size: 30px;
     margin: 1em;
 }
 
@@ -30,47 +30,51 @@ p {
     letter-spacing: 2px;
     color: #252525;
     font-size: 18px;
-    margin: 1em;  
+    margin: 1em;
 }
 
 /* Header styles */
 header {
+    position: relative;
     background-color: #f0c4a0;
     background: url("/assets/images/hero3.jpg") no-repeat center center;
-    padding: 30px 0;  /* This determines the height of the header */
-    height: auto; 
-    min-height: 150px; 
-    overflow: hidden; 
+    padding: 30px 0;
+    height: auto;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+header > * {
+    position: relative;
+    z-index: 2;
 }
 
 #hero-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     background: url("/assets/images/hero3.jpg") no-repeat center center;
+    background-size: cover;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     position: relative;
 }
 
-/* Zoom animation for hero image */
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
 #logo {
-    float: left;
     font-size: 24px;
     margin-left: 20px;
-}
-
-#nav-toggle {
-    display: inline-block;
+    font-weight: bold;
+    display: block;
+    text-align: center;
 }
 
 .nav-toggle-label {
@@ -79,25 +83,26 @@ header {
 }
 
 nav {
-    float: right;
-    margin: 50px; 
-    height: auto; 
-    min-height: 50px; 
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 #menu {
-    list-style: square;
+    list-style: none;
 }
 
 #menu li {
     display: inline-block;
-    margin: 20px; /* This determines spacing between menu items */
-    padding: 10px; /* Add padding to increase clickable area */
+    margin: 0 20px;
+    padding: 10px;
 }
 
 #menu a {
     text-decoration: none;
     color: #3a3a3a;
+    padding: 10px 15px;
 }
 
 #menu a:hover {
@@ -105,48 +110,70 @@ nav {
 }
 
 /* Responsive */
+@media screen and (max-width: 1200px) {
+    #menu a {
+        padding: 10px 10px; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #menu a {
+        padding: 10px 8px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    
-    nav {
-        display: none;
-        width: 100%;
+    #logo, nav {
+        float: none;
         text-align: center;
-        margin-top: 10px;
-        height: auto;
-        min-height: 50px;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
     }
 
     #menu li {
         display: block;
         margin: 10px 0;
-        padding: 10px 0; /* Adjust padding for mobile */
-    }
-
-    #menu a {
-        display: block;
-        padding: 10px;
     }
 
     .container {
-        padding: 40px;
+        padding: 40px 10px;
     }
 
     .technique {
-        padding: 30px;
+        padding: 30px 10px;
     }
 }
 
+@media screen and (max-width: 480px) {
+    #menu a {
+        padding: 10px 5px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+/* Signup Page */
 body.signup-page {
     padding: inherit;
 }
 
 .sign-up-image {
     background-image: url("/assets/images/sign-up2.jpeg");
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background-size: cover;
     background-position: 75%;
-    padding: 20px 10% 0 10%;
+    padding: 20px;
     flex-grow: 3;
     margin-top: 50px;
 }
@@ -154,13 +181,12 @@ body.signup-page {
 #signup-form {
     color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 310px 50px 20px;
+    padding: 30px 20px; /* Reduced extreme padding */
     margin-top: 30px;
-    margin-bottom: auto;
 }
 
 #signup-form > h2 {
-    color: #fafafa;
+    color: #3a3a3a;
     margin-bottom: 20px;
 }
 
@@ -168,12 +194,11 @@ body.signup-page {
     background: transparent;
     color: #c4bebe;
     width: 100%;
-    height: 25px;
+    height: 35px; /* Increased height for better touch experience */
     margin: 5px 0 20px 0;
     border: 1px solid #020000;
     border-radius: 2px;
     padding: 0 5px;
-    justify-content: space-between;
 }
 
 .join-button {
@@ -183,6 +208,12 @@ body.signup-page {
     font-size: 100%;
     background-color: #f0ac47;
     color: #0e0101;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.join-button:hover {
+    background-color: #252524;
 }
 
 /* Footer styles */
@@ -197,6 +228,7 @@ footer {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px; /* Added padding */
 }
 
 /* Form styles */
@@ -218,21 +250,6 @@ input[type="email"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    box-sizing: border-box;
-}
-
-.join-button {
-    background-color: #e2c328;
-    color: #0e0101;
-    padding: 15px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.join-button:hover {
-    background-color: #d0b520;
 }
 
 footer {
