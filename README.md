@@ -3,31 +3,37 @@
 Mindset mastery is a site that hopes to help people start practicing and build a routine to develop mindfulness. The site will give an understanding of what mindfulness is, why it is important, and its benefits. Mindset Mastery also includes three easy techniques to help people develop their mindfulness routines and use of www.headspace.com resources as a starting point for people new to mindfulness.  
 
 ## Features
-![image]()
+![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/ac5a1dd4-b51e-45dd-94d7-b7ef65cb5ec7)
+)
 
 ### Navigation Bar
 The navigation bar has links to three pages: Home, Techniques and Sign-up page. 
 
 ### The landing page image
 The landing page includes an image and welcomes the user.
-![image]()
+![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/d4320b55-378d-48b3-99d0-1e89e7b43270)
+)
 
 ### Org. Ethos Section
 This section allows the user to understand the benefits of mindfulness.
-![image]()
+![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/eb621351-3d71-45ea-81a4-6dab8d000229)
+)
 
 ### The Footer
 The footer section includes links to the relevant social media sites.
-![image]()
+![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/6938a812-c1bf-4070-abf6-06995015cf5f)
+)
 
 ### Techniques
 This page gives a small introduction to three simple techniques and additional refers to using Headspace.com as a starting point. 
-![image]()
+![image](![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/f256bd44-255d-4685-9dda-7de8433be4f4)
+)
 
 
 ### Sign-up
 This page allows the user to get sign up to the site and start their journey to improve their health and well-being. 
-![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/dfbe8de7-842c-467d-82c3-5d2a3e3384fd)
+![image](h![image](https://github.com/V101142/Mindset-Mastery-VI/assets/137928565/35a54fa7-9d52-4572-9fe1-849ae9ccd003)
+)
 
 
 ## Features Left to Implement
