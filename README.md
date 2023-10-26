@@ -36,24 +36,24 @@ To mention Mind.com and have videos/reviews on how to implement mindless routine
 
 ## Testing
 ### How your project looks and works on different browsers and screen sizes.
-Project does not fully adapt to different size screens but works on different browsers.
-![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/f6fd5c61-641e-425a-9bb3-5b26f651893c)
+Project fully adapt to different size screens. 
+![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/f6fd5c61-641e-425a-9bb3-5b26f651893c) 
 
 
 ## Problems
-Images were not loading or showing on pages. 
-Icons downloaded from font-Awesame did not show. Tried to fix and correct the code but it wasn't successful.
-CodeAnywhere did not save code for several days and did allow commit.  Lost code many times. 
-Page do not adapt to different size screens. 
-Not able to deploy my code.  
+Fixed images that did not show on pages using adobe re-sizing tool and edit media on css. 
+Icons downloaded from font-Awesame fixed and correct the code to successfully show in footer.
+Page did not adapt to different size screens edit fully css-media to fully responcive site. 
+  
 
 ## Accessibility of the website
 Web is accessible- ![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/85f1f9d7-72a6-4714-a04a-7bde9c3ec5fb)
 
 
 ## Validator Testing
-HTML- No errors found. 
-CSS- No errors found. 
+HTML- No errors found. https://validator.w3.org/nu/#textarea
+CSS- No errors found. https://validator.w3.org/nu/#textarea
+
 
 ## Deployment
 The site was deployed to GitHub pages following: 
