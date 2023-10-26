@@ -36,8 +36,7 @@ To mention Mind.com and have videos/reviews on how to implement mindless routine
 
 ## Testing
 ### How your project looks and works on different browsers and screen sizes.
-Project fully adapt to different size screens. 
-![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/f6fd5c61-641e-425a-9bb3-5b26f651893c) 
+Project fully responsive.  
 
 
 ## Problems
@@ -46,13 +45,22 @@ Icons downloaded from font-Awesame fixed and correct the code to successfully sh
 Page did not adapt to different size screens edit fully css-media to fully responcive site. 
   
 
-## Accessibility of the website
-Web is accessible- ![image](https://github.com/V101142/Mindset-Mastery/assets/137928565/85f1f9d7-72a6-4714-a04a-7bde9c3ec5fb)
+## Accessibility
+For the accessibility this was used:
+- Semantic HTML.
+- Alt attributes on images.
 
+## Testing 
+-Chrome developer tools was used to find any issues while building the webpage.
+-The W3C validators for HTML and CSS was used when the webpage was finished. 
 
 ## Validator Testing
 HTML- No errors found. https://validator.w3.org/nu/#textarea
 CSS- No errors found. https://validator.w3.org/nu/#textarea
+
+*Lighthouse testing
+
+[Link to Lighthouse tool](https://8000-v101142-mindsetmasteryv-tf2phhsdvrn.ws-eu105.gitpod.io/index.html)
 
 
 ## Deployment
@@ -61,13 +69,11 @@ The site was deployed to GitHub pages following:
 2. Go to the "Pages" tab on the left-hand sidebar.
 3. Under "Source", click the "None" drop-down and select the "main" or "master" branch.
 
-GitHub Repository URL-
-https://v101142-mindset-mastery-rwh48y6xs2.us2.codeanyapp.com/#/workspaces/Mindset-Mastery
+GitHub Repository URL- https://github.com/V101142/Mindset-Mastery-VI.git
 
-Deployed project URL- 
-https://v101142-mindset-mastery-rwh48y6xs2.us2.codeanyapp.com/#/workspaces/Mindset-Mastery
+Deployed project URL- https://v101142.github.io/Mindset-Mastery-VI/
 
-The live link can be found here - https://8000-v101142-mindset-mastery-rwh48y6xs2.us2.codeanyapp.com/
+The live link can be found here - https://8000-v101142-mindsetmasteryv-tf2phhsdvrn.ws-eu105.gitpod.io/index.html
 
 ## Credits
 ### Content
@@ -90,4 +96,3 @@ https://www.w3schools.com/css/css3_object-fit.asp#:~:text=object%2Dfit%20Propert
 https://realpython.com/python-http-server/
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/f2db5fd401004fccb43b01a6066a5333/
 https://new.express.adobe.com/
-
