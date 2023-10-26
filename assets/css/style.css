@@ -38,9 +38,8 @@ header {
     position: relative;
     background-color: #f0c4a0;
     background: url("/assets/images/hero3.jpg") no-repeat center center;
+    background-size: cover;
     padding: 30px 0;
-    height: auto;
-    overflow: hidden;
 }
 
 header::before {
@@ -59,27 +58,12 @@ header > * {
     z-index: 2;
 }
 
-#hero-image {
-    width: 100%;
-    background: url("/assets/images/hero3.jpg") no-repeat center center;
-    background-size: cover;
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    position: relative;
-}
-
 #logo {
     font-size: 24px;
-    margin-left: 20px;
+    margin: 20px auto;
     font-weight: bold;
     display: block;
     text-align: center;
-}
-
-.nav-toggle-label {
-    display: none;
-    cursor: pointer;
 }
 
 nav {
@@ -87,16 +71,21 @@ nav {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
+    display: flex; /* Use flexbox for nav */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 #menu {
     list-style: none;
+    display: flex; /* Use flexbox for menu items */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+    width: 100%;
 }
 
 #menu li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 10px;
+    margin: 10px;
 }
 
 #menu a {
@@ -109,47 +98,52 @@ nav {
     border-bottom: 2px ridge #3a3a3a;
 }
 
-/* Responsive */
-@media screen and (max-width: 1200px) {
-    #menu a {
-        padding: 10px 10px; 
-    }
+img[alt] {
+    display: none;
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 1024px) {
-    #menu a {
-        padding: 10px 8px;
+    body {
+        font-size: 17px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 17px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #logo, nav {
-        float: none;
-        text-align: center;
-    }
-
-    nav {
-        display: block;
-        width: 100%;
+    #logo {
+        margin: 10px auto;
     }
 
     #menu li {
-        display: block;
-        margin: 10px 0;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #menu a {
+        padding: 12px 20px;  /* Increased padding for better touch experience */
     }
 
     .container {
-        padding: 40px 10px;
+        padding: 20px 10px;
     }
 
-    .technique {
-        padding: 30px 10px;
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #menu a {
-        padding: 10px 5px;
+    body {
+        font-size: 16px;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -157,10 +151,17 @@ nav {
     }
 
     p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    #menu a {
+        padding: 14px 20px;  /* Further increased padding for touch targets */
+    }
+
+    #signup-form {
+        padding: 20px 10px;  /* Adjusted padding for forms */
     }
 }
-
 
 /* Signup Page */
 body.signup-page {
